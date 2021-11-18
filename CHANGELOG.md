@@ -1,5 +1,18 @@
 # @ctx-core/build
 
+## 1.0.5
+
+### Patch Changes
+
+- typescript: ^4.4.4 -> ^4.5.2
+- @types/node: ^16.11.7 -> ^16.11.8
+- @swc/core: ^1.2.108 -> ^1.2.110
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.2
+  - @ctx-core/monorepo@18.1.2
+  - @ctx-core/queue@6.1.1
+
 ## 1.0.4
 
 ### Patch Changes
