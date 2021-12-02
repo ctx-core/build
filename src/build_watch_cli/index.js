@@ -310,10 +310,6 @@ Options:
 				if (verbose) {
 					console.info('sync_src_to_dist|force|missing_dist', {
 						src_path,
-//						force,
-//						dist_relative_path_a,
-//						dist_path_a,
-//						'dist_stat_a.map(stat=>!!stat)': dist_stat_a.map(stat => !!stat),
 					})
 				}
 				pending_op_adapter_a.push(
