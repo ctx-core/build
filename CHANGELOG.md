@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.9
+
+### Patch Changes
+
+- fix: build_watch_cli: infinite build cycle when source file changes
+
 ## 1.0.8
 
 ### Patch Changes

@@ -46,9 +46,8 @@ Options:
 -v, --verbose	Verbose logs
 	`.trim())
 	}
-	/** @type {Record<string, function>}*/
 	const ops = { build, rm }
-	const ts_dist_ext_a = ['.d.ts', '.js', '.jsx', '.js.map', '.jsx.map']
+	const ts_dist_ext_a = ['.js', '.jsx', '.js.map', '.jsx.map']
 	const ts_src_ext_a = ['.ts', '.tsx']
 	const op_threads = parseInt(param_r.op_threads_a?.[0] || '8')
 	const op_queue = queue_(op_threads)
@@ -284,16 +283,17 @@ Options:
 			if (should_ignore_path_(src_path)) continue
 			if (~src_path.indexOf('/dist/')) continue
 			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir=>~src_path.indexOf(tsconfig_dir))
-			const src_relative_path = src_path.replace(tsconfig_dir, '')
+			const src_relative_path = src_path.replace(join(tsconfig_dir, 'src'), '')
 			const dist_relative_path_a = ts_dist_ext_a
 				.filter(ts_dist_ext=>
 					src_ext === '.tsx'
 					? !~['.js', '.js.map'].indexOf(ts_dist_ext)
 					: !~['.jsx', '.jsx.map'].indexOf(ts_dist_ext)
-				)
-				.map(asset_ext=>`${src_relative_path}${asset_ext}`)
-			const dist_base_path = join(tsconfig_dir, basename(src_relative_path, src_ext))
-			const dist_path_a = dist_relative_path_a.map(dist_relative_path=>`${dist_base_path}${dist_relative_path}`)
+				).map(asset_ext=>
+					`${dirname(src_relative_path)}${basename(src_relative_path, src_ext)}${asset_ext}`)
+			const dist_base_path = join(tsconfig_dir, 'dist')
+			const dist_path_a = dist_relative_path_a.map((dist_relative_path)=>
+				join(dist_base_path, dist_relative_path))
 			/** @type {(Stats|null)[]} */
 			const dist_stat_a = await Promise.all(
 				dist_path_a.map(dist_path=>file_stat_(dist_path))
@@ -303,6 +303,9 @@ Options:
 					console.info('sync_src_to_dist|force|missing_dist', {
 						src_path,
 						force,
+						dist_relative_path_a,
+						dist_path_a,
+						'dist_stat_a.map(stat=>!!stat)': dist_stat_a.map(stat=>!!stat),
 					})
 				}
 				pending_op_adapter_a.push(
