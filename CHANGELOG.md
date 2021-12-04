@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.10
+
+### Patch Changes
+
+- @swc/core: ^1.2.116 -> ^1.2.117
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.6
+  - @ctx-core/monorepo@18.1.6
+  - @ctx-core/queue@6.1.5
+
 ## 1.0.9
 
 ### Patch Changes
