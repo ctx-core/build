@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.13
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.10
+  - @ctx-core/monorepo@18.1.10
+  - @ctx-core/queue@6.1.7
+
 ## 1.0.12
 
 ### Patch Changes
