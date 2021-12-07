@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"private": false,
 	"module": "./dist/index.js",
 	"types": "./src/index.ts",

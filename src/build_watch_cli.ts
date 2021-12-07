@@ -47,8 +47,8 @@ Options:
 	`.trim())
 	}
 	const ops = { build, rm }
-	const ts_dist_ext_a = ['.js', '.jsx', '.js.map', '.jsx.map']
-	const ts_src_ext_a = ['.ts', '.tsx']
+	const ts_dist_ext_a = ['.js', '.jsx', '.js.map', '.jsx.map', '.svelte', '.mjs', '.cjs', '.js',]
+	const ts_src_ext_a = ['.ts', '.tsx', '.svelte', '.mjs', '.cjs', '.js',]
 	const op_threads = parseInt(param_r.op_threads_a?.[0] || '8')
 	const op_queue = queue_(op_threads)
 	const sync_threads = parseInt(param_r.sync_threads_a?.[0] || '1')
@@ -298,7 +298,7 @@ Options:
 			const dist_stat_a = await Promise.all(
 				dist_path_a.map(dist_path=>file_stat_(dist_path))
 			)
-			if (force || dist_stat_a.some(exists=>!exists)) {
+			if (force || dist_stat_a.every(exists=>!exists)) {
 				if (verbose) {
 					console.info('sync_src_to_dist|force|missing_dist', {
 						src_path,
