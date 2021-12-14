@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.17
+
+### Patch Changes
+
+- @types/node: ^16.11.12 -> ^16.11.13
+
 ## 1.0.16
 
 ### Patch Changes

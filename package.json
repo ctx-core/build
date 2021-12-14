@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.16",
+	"version": "1.0.17",
 	"private": false,
 	"types": "./src/index.ts",
 	"type": "module",
@@ -28,7 +28,7 @@
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
 		"@swc/core": "^1.2.120",
-		"@types/node": "^16.11.12",
+		"@types/node": "^16.11.13",
 		"@types/picomatch": "^2.3.0",
 		"@types/rusha": "^0.8.0",
 		"typescript": "next"
