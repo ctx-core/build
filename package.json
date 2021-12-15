@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.19",
+	"version": "1.0.20",
 	"private": false,
 	"types": "./src/index.ts",
 	"type": "module",
@@ -22,9 +22,9 @@
 		"exec": "$@"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.13",
-		"@ctx-core/monorepo": "workspace:^18.1.15",
-		"@ctx-core/queue": "workspace:^6.1.10",
+		"@ctx-core/cli-args": "workspace:^11.0.14",
+		"@ctx-core/monorepo": "workspace:^18.1.16",
+		"@ctx-core/queue": "workspace:^6.1.11",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.1.0",
 		"js-yaml": "^4.1.0",

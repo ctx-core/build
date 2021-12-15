@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.20
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.14
+  - @ctx-core/monorepo@18.1.16
+  - @ctx-core/queue@6.1.11
+
 ## 1.0.19
 
 ### Patch Changes
