@@ -1,8 +1,8 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.20",
+	"version": "1.0.21",
 	"private": false,
-	"types": "./src/index.ts",
+	"types": "./dist/index.d.ts",
 	"type": "module",
 	"bin": {
 		"build-watch": "./bin/build-watch.mjs"
@@ -10,21 +10,23 @@
 	"exports": {
 		".": {
 			"import": "./dist/index.js",
-			"types": "./src/index.ts"
+			"types": "./dist/index.d.ts"
 		},
 		"./package.json": "./package.json"
 	},
 	"scripts": {
 		"build": "npm run compile",
 		"clean": "rimraf dist",
-		"compile": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
+		"compile": "npm run compile_source && npm run compile_declaration",
+		"compile_source": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
+		"compile_declaration": "tsc src/index.ts --declaration --emitDeclarationOnly --declarationDir dist",
 		"prepublishOnly": "npm run compile",
 		"exec": "$@"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.14",
-		"@ctx-core/monorepo": "workspace:^18.1.16",
-		"@ctx-core/queue": "workspace:^6.1.11",
+		"@ctx-core/cli-args": "workspace:^11.0.15",
+		"@ctx-core/monorepo": "workspace:^18.1.17",
+		"@ctx-core/queue": "workspace:^6.1.12",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.1.0",
 		"js-yaml": "^4.1.0",

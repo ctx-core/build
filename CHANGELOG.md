@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.21
+
+### Patch Changes
+
+- \*.d.ts export
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.15
+  - @ctx-core/monorepo@18.1.17
+  - @ctx-core/queue@6.1.12
+
 ## 1.0.20
 
 ### Patch Changes
