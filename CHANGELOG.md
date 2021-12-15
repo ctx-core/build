@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.18
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.12
+  - @ctx-core/monorepo@18.1.14
+  - @ctx-core/queue@6.1.9
+
 ## 1.0.17
 
 ### Patch Changes

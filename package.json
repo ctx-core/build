@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.17",
+	"version": "1.0.18",
 	"private": false,
 	"types": "./src/index.ts",
 	"type": "module",
@@ -15,9 +15,9 @@
 		"exec": "$@"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.11",
-		"@ctx-core/monorepo": "workspace:^18.1.13",
-		"@ctx-core/queue": "workspace:^6.1.8",
+		"@ctx-core/cli-args": "workspace:^11.0.12",
+		"@ctx-core/monorepo": "workspace:^18.1.14",
+		"@ctx-core/queue": "workspace:^6.1.9",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.1.0",
 		"js-yaml": "^4.1.0",
@@ -38,5 +38,6 @@
 		"postcss",
 		"swiper"
 	],
-	"homepage": "https://github.com/ctx-core/build#readme"
+	"homepage": "https://github.com/ctx-core/build#readme",
+	"svelte": "./dist/index.js"
 }
