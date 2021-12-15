@@ -1,11 +1,18 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.18",
+	"version": "1.0.19",
 	"private": false,
 	"types": "./src/index.ts",
 	"type": "module",
 	"bin": {
 		"build-watch": "./bin/build-watch.mjs"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./src/index.ts"
+		},
+		"./package.json": "./package.json"
 	},
 	"scripts": {
 		"build": "npm run compile",
@@ -15,9 +22,9 @@
 		"exec": "$@"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.12",
-		"@ctx-core/monorepo": "workspace:^18.1.14",
-		"@ctx-core/queue": "workspace:^6.1.9",
+		"@ctx-core/cli-args": "workspace:^11.0.13",
+		"@ctx-core/monorepo": "workspace:^18.1.15",
+		"@ctx-core/queue": "workspace:^6.1.10",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.1.0",
 		"js-yaml": "^4.1.0",
@@ -39,5 +46,12 @@
 		"swiper"
 	],
 	"homepage": "https://github.com/ctx-core/build#readme",
-	"svelte": "./dist/index.js"
+	"svelte": "./dist/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/build.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ctx-core/build/issues"
+	}
 }

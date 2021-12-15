@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.19
+
+### Patch Changes
+
+- fix: package.json: exports
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.13
+  - @ctx-core/monorepo@18.1.15
+  - @ctx-core/queue@6.1.10
+
 ## 1.0.18
 
 ### Patch Changes
