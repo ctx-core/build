@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"build": "npm run compile",
-		"clean": "rm -rf dist",
+		"clean": "rimraf dist",
 		"compile": "swc src --out-dir dist --copy-files --source-maps --config-file .swcrc",
 		"prepublishOnly": "npm run compile",
 		"exec": "$@"
@@ -31,6 +31,7 @@
 		"@types/node": "^16.11.13",
 		"@types/picomatch": "^2.3.0",
 		"@types/rusha": "^0.8.0",
+		"rimraf": "^3.0.2",
 		"typescript": "next"
 	},
 	"noUpdate": [
