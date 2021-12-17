@@ -1,5 +1,16 @@
 # @ctx-core/build
 
+## 1.0.22
+
+### Patch Changes
+
+- @types/node: ^16.11.13 -> ^17.0.0
+- fix: build
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.16
+  - @ctx-core/monorepo@18.1.18
+  - @ctx-core/queue@6.1.13
+
 ## 1.0.21
 
 ### Patch Changes
