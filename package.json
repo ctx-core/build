@@ -1,12 +1,12 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.22",
+	"version": "1.0.23",
 	"private": false,
 	"type": "module",
 	"bin": {
 		"build-watch": "./bin/build-watch.mjs"
 	},
-	"types": "./dist/index.d.ts",
+	"types": "./src/index.ts",
 	"exports": {
 		".": {
 			"import": "./dist/index.js"
@@ -24,9 +24,9 @@
 		"exec": "$@"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.16",
-		"@ctx-core/monorepo": "workspace:^18.1.18",
-		"@ctx-core/queue": "workspace:^6.1.13",
+		"@ctx-core/cli-args": "workspace:^11.0.17",
+		"@ctx-core/monorepo": "workspace:^18.1.19",
+		"@ctx-core/queue": "workspace:^6.1.14",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.1.0",
 		"js-yaml": "^4.1.0",

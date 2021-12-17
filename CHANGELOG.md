@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.23
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.17
+  - @ctx-core/monorepo@18.1.19
+  - @ctx-core/queue@6.1.14
+
 ## 1.0.22
 
 ### Patch Changes
