@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.26
+
+### Patch Changes
+
+- update dependencies
+
 ## 1.0.25
 
 ### Patch Changes
