@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.27
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+
 ## 1.0.26
 
 ### Patch Changes
