@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.29
+
+### Patch Changes
+
+- fix: match apps/: minimatch instead of picomatch
+
 ## 1.0.28
 
 ### Patch Changes

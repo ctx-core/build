@@ -2,9 +2,9 @@ import CheapWatch from 'cheap-watch'
 import { fdir } from 'fdir'
 import { readFile, rm as fs_rm, stat } from 'fs/promises'
 import yaml from 'js-yaml'
+import minimatch from 'minimatch'
 import ora from 'ora'
 import { basename, dirname, join, resolve } from 'path'
-import picomatch from 'picomatch'
 import Rusha from 'rusha'
 import { param_r_ } from '@ctx-core/cli-args'
 import { exec } from '@ctx-core/monorepo'
@@ -27,7 +27,6 @@ export async function build_watch_cli() {
 	const verbose = !!param_r.verbose
 	/** @type {string[]} */
 	const ignore_a = param_r.ignore_a || []
-	const ignore_picomatch_a = ignore_a.map(ignore => picomatch(ignore))
 	const pnpm_workspace_path = param_r.pnpm_workspace_path_a?.[0] || './pnpm-workspace.yaml'
 	if (help) {
 		console.info(`
@@ -142,7 +141,7 @@ Options:
 	 * @param {string} path
 	 */
 	function should_ignore_path_(path) {
-		return ignore_picomatch_a.some(ignore_picomatch => ignore_picomatch(path))
+		return ignore_a.some(ignore => minimatch(path, ignore))
 	}
 	/**
 	 * @param {string} relative_path
