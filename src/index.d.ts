@@ -1,1 +1,1 @@
-export * from './build_watch_cli'
+export * from './build_watch_cli/index'

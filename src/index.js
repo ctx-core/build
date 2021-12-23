@@ -1,1 +1,1 @@
-export * from './build_watch_cli.js'
+export * from './build_watch_cli/index.js'

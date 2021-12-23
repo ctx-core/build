@@ -2,15 +2,16 @@ import CheapWatch from 'cheap-watch'
 import { fdir } from 'fdir'
 import { readFile, rm as fs_rm, stat } from 'fs/promises'
 import yaml from 'js-yaml'
-import ora, { Ora } from 'ora'
+import ora from 'ora'
 import { basename, dirname, join, resolve } from 'path'
 import picomatch from 'picomatch'
 import Rusha from 'rusha'
 import { param_r_ } from '@ctx-core/cli-args'
 import { exec } from '@ctx-core/monorepo'
 import { queue_ } from '@ctx-core/queue'
-/** @typedef {import('./build_watch_cli.d.ts').Op} Op */
-/** @typedef {import('./build_watch_cli.d.ts').OpAdapter} OpAdapter */
+/** @typedef {import('./index.d.ts').Op} Op */
+/** @typedef {import('./index.d.ts').OpAdapter} OpAdapter */
+/** @typedef {import('ora').Ora} Ora */
 export async function build_watch_cli() {
 	const param_r = param_r_(process.argv.slice(2), {
 		help: '-h, --help',
@@ -315,9 +316,9 @@ Options:
 					console.info('sync_src_to_dist|force|missing_dist', {
 						src_path,
 						force,
-						dist_relative_path_a,
-						dist_path_a,
-						'dist_stat_a.map(stat=>!!stat)': dist_stat_a.map(stat => !!stat),
+//						dist_relative_path_a,
+//						dist_path_a,
+//						'dist_stat_a.map(stat=>!!stat)': dist_stat_a.map(stat => !!stat),
 					})
 				}
 				pending_op_adapter_a.push(
