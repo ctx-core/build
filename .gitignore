@@ -4,5 +4,5 @@ node_modules
 COMMIT_EDITMSG
 ~/.npm
 coverage
-dist
+lib
 types

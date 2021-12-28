@@ -74,7 +74,7 @@ Options:
 		.filter((_, i) => pkg_dir_stat_a[i])
 		.sort((i0_path, i1_path) => i1_path.length - i0_path.length)
 	const pkg_src_dir_a = pkg_path_a.map(package_path => join(package_path, 'src'))
-	const pkg_dist_dir_a = pkg_path_a.map(package_path => join(package_path, 'dist'))
+	const pkg_dist_dir_a = pkg_path_a.map(package_path => join(package_path, 'lib'))
 	const all_ts_src_path_a = await path_a_(pkg_src_dir_a.map(ts_src_path => `${ts_src_path}/**/*.(ts|tsx)`))
 	const d_ts_regex = /\.d\.ts$/
 	const ts_src_path_a = all_ts_src_path_a.filter(ts_path => !d_ts_regex.test(ts_path))
@@ -152,7 +152,7 @@ Options:
 			const absolute_path = join(root_dir, relative_path)
 			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir => ~absolute_path.indexOf(tsconfig_dir))
 			for (const ts_dist_ext of ts_dist_ext_a) {
-				await sync_dist_to_src(relative_path, await path_a_([`${tsconfig_dir}/dist/**/*${ts_dist_ext}`]), ts_dist_ext)
+				await sync_dist_to_src(relative_path, await path_a_([`${tsconfig_dir}/lib/**/*${ts_dist_ext}`]), ts_dist_ext)
 			}
 			for (const ts_src_ext of ts_src_ext_a) {
 				await sync_src_to_dist(relative_path, await path_a_([`${tsconfig_dir}/src/**/*${ts_src_ext}`]), ts_src_ext)
@@ -248,7 +248,7 @@ Options:
 			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir => ~dist_path.indexOf(tsconfig_dir))
 			const dist_relative_path = dist_path
 				.replace(`${tsconfig_dir}/`, '')
-				.replace(/^dist\//, '')
+				.replace(/^lib\//, '')
 			const src_path_a = ts_src_ext_a.map(source_ext =>
 				join(
 					tsconfig_dir, 'src', dirname(dist_relative_path),
@@ -293,7 +293,7 @@ Options:
 	async function sync_src_to_dist(id, src_path_a, src_ext, force = false) {
 		for (const src_path of src_path_a) {
 			if (should_ignore_path_(src_path)) continue
-			if (~src_path.indexOf('/dist/')) continue
+			if (~src_path.indexOf('/lib/')) continue
 			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir => ~src_path.indexOf(tsconfig_dir))
 			const src_relative_path = src_path.replace(join(tsconfig_dir, 'src'), '')
 			const dist_relative_path_a = ts_dist_ext_a
@@ -303,7 +303,7 @@ Options:
 					: !~['.jsx', '.jsx.map'].indexOf(ts_dist_ext)
 				).map(asset_ext =>
 					`${dirname(src_relative_path)}${basename(src_relative_path, src_ext)}${asset_ext}`)
-			const dist_base_path = join(tsconfig_dir, 'dist')
+			const dist_base_path = join(tsconfig_dir, 'lib')
 			const dist_path_a = dist_relative_path_a.map((dist_relative_path) =>
 				join(dist_base_path, dist_relative_path))
 			/** @type {(Stats|null)[]} */
