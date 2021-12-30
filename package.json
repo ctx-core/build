@@ -36,7 +36,7 @@
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.55",
-		"@swc/core": "^1.2.123",
+		"@swc/core": "^1.2.124",
 		"@types/node": "^17.0.5",
 		"@types/rusha": "^0.8.0",
 		"c8": "^7.10.0",
