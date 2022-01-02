@@ -110,6 +110,7 @@ Options:
 			 * @returns {Promise<void>}
 			 */
 			async ({ path, stats }) => {
+				if (should_ignore_path_(path)) return
 				if (verbose) {
 					console.info('+', path)
 				}

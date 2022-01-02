@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.31
+
+### Patch Changes
+
+- fix: build-watch: handle ignored paths on update
+
 ## 1.0.30
 
 ### Patch Changes
