@@ -126,6 +126,7 @@ Options:
 			 * @returns {Promise<void>}
 			 */
 			async ({ path, stats }) => {
+				if (should_ignore_path_(path)) return
 				if (verbose) {
 					console.info('-', path)
 				}
@@ -265,11 +266,7 @@ Options:
 				const dist_stat = await file_stat_(dist_path)
 				if (src_stat?.mtime > dist_stat?.mtime) {
 					if (verbose) {
-						console.info('sync_dist_to_src|build', {
-							dist_path,
-							'src_stat?.mtime': src_stat?.mtime,
-							'dist_stat?.mtime': dist_stat?.mtime,
-						})
+						console.info('sync_dist_to_src|build', { dist_path })
 					}
 					pending_op_adapter_a.push(
 						op_adapter_(id, { name: 'build', args: [tsconfig_dir] })
@@ -314,7 +311,7 @@ Options:
 				if (verbose) {
 					console.info('sync_src_to_dist|force|missing_dist', {
 						src_path,
-						force,
+//						force,
 //						dist_relative_path_a,
 //						dist_path_a,
 //						'dist_stat_a.map(stat=>!!stat)': dist_stat_a.map(stat => !!stat),

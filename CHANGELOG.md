@@ -1,5 +1,12 @@
 # @ctx-core/build
 
+## 1.0.30
+
+### Patch Changes
+
+- fix: build-watch: ignore specified files on updates & deletes
+- build-watch: shorten logging: sync_dist_to_src|build,sync_src_to_dist|force|missing_dist
+
 ## 1.0.29
 
 ### Patch Changes
