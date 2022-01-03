@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.32
+
+### Patch Changes
+
+- version bump
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.21
+  - @ctx-core/monorepo@18.1.26
+  - @ctx-core/queue@6.1.18
+
 ## 1.0.31
 
 ### Patch Changes
