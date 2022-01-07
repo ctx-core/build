@@ -1,5 +1,17 @@
 # @ctx-core/build
 
+## 1.0.34
+
+### Patch Changes
+
+- uvu: ^0.5.2 -> ^0.5.3
+- @types/node: ^17.0.7 -> ^17.0.8
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.22
+  - @ctx-core/monorepo@18.1.28
+  - @ctx-core/queue@6.1.19
+
 ## 1.0.33
 
 ### Patch Changes
