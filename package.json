@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.34",
+	"version": "1.0.35",
 	"private": false,
 	"type": "module",
 	"bin": {
@@ -24,9 +24,9 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.22",
-		"@ctx-core/monorepo": "workspace:^18.1.28",
-		"@ctx-core/queue": "workspace:^6.1.19",
+		"@ctx-core/cli-args": "workspace:^11.0.23",
+		"@ctx-core/monorepo": "workspace:^18.1.29",
+		"@ctx-core/queue": "workspace:^6.1.20",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.1.0",
 		"js-yaml": "^4.1.0",
@@ -54,5 +54,6 @@
 	},
 	"bugs": {
 		"url": "https://github.com/ctx-core/build/issues"
-	}
+	},
+	"sideEffects": false
 }
