@@ -24,8 +24,8 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "workspace:^11.0.23",
-		"@ctx-core/monorepo": "workspace:^18.1.31",
+		"@ctx-core/cli-args": "workspace:^11.0.24",
+		"@ctx-core/monorepo": "workspace:^18.1.32",
 		"@ctx-core/queue": "workspace:^6.1.20",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.2.0",
