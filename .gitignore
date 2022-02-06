@@ -6,3 +6,4 @@ COMMIT_EDITMSG
 coverage
 lib
 types
+*.tgz
