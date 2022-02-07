@@ -25,7 +25,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/cli-args": "workspace:^11.0.25",
-		"@ctx-core/monorepo": "workspace:^18.2.1",
+		"@ctx-core/monorepo": "workspace:^18.2.2",
 		"@ctx-core/queue": "workspace:^6.2.0",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.2.0",
