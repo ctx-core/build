@@ -30,7 +30,7 @@
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.2.0",
 		"js-yaml": "^4.1.0",
-		"minimatch": "^5.0.0",
+		"minimatch": "^5.0.1",
 		"ora": "5.4.1",
 		"rusha": "^0.8.14"
 	},
