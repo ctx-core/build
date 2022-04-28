@@ -1,5 +1,12 @@
 # @ctx-core/build
 
+## 1.0.52
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^18.2.12 -> ^18.2.13
+- @ctx-core/cli-args: ^11.0.32 -> ^11.0.33
+
 ## 1.0.51
 
 ### Patch Changes
