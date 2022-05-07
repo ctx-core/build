@@ -1,5 +1,12 @@
 # @ctx-core/build
 
+## 1.0.53
+
+### Patch Changes
+
+- @ctx-core/cli-args: ^11.0.33 -> ^11.0.34
+- eslint: ^8.14.0 -> ^8.15.0
+
 ## 1.0.52
 
 ### Patch Changes
