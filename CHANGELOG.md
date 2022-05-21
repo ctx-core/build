@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.60
+
+### Patch Changes
+
+- @ctx-core/cli-args: ^11.0.35 -> ^11.0.36
+
 ## 1.0.59
 
 ### Patch Changes
