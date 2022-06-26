@@ -1,5 +1,13 @@
 # @ctx-core/build
 
+## 1.0.66
+
+### Patch Changes
+
+- ora: 6.1.0 -> 6.1.1
+- Updated dependencies
+  - @ctx-core/monorepo@18.3.13
+
 ## 1.0.65
 
 ### Patch Changes
