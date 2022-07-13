@@ -1,5 +1,14 @@
 # @ctx-core/build
 
+## 1.0.68
+
+### Patch Changes
+
+- fix: build_watch_cli: jsdoc types
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/monorepo@18.4.1
+
 ## 1.0.67
 
 ### Patch Changes

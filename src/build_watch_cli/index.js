@@ -51,10 +51,10 @@ Options:
 	/** @type {Set<string>} */
 	const pending_id_set = new Set()
 	const root_dir = resolve('.')
-	/** @type {{ packages:string[] }} */
-	const pnpm_workspace = await yaml.load((await readFile(pnpm_workspace_path)).toString())
+	const pnpm_workspace = /** @type {{ packages:string[] }} */ await yaml.load(
+		await readFile(pnpm_workspace_path).then($=>$.toString()))
 	/** @type {string[]} */
-	const pnpm_workspace_package_path_a = pnpm_workspace.packages.map(package_path => join(root_dir, package_path))
+	const pnpm_workspace_package_path_a = pnpm_workspace.packages.map(package_path=>join(root_dir, package_path))
 	/** @type {string[]} */
 	const pkg_path_a = await new fdir().glob(...pnpm_workspace_package_path_a)
 		.onlyDirs()
@@ -64,31 +64,31 @@ Options:
 	/** @type {Stats[]} */
 	const pkg_dir_stat_a = (
 		await Promise.all(
-			pkg_path_a.map(package_path =>
+			pkg_path_a.map(package_path=>
 				file_stat_(join(package_path, 'package.json'))
 			)
 		)
 	)
 	/** @type {string[]} */
 	const pkg_dir_a = pkg_path_a
-		.filter((_, i) => pkg_dir_stat_a[i])
-		.sort((i0_path, i1_path) => i1_path.length - i0_path.length)
-	const pkg_src_dir_a = pkg_path_a.map(package_path => join(package_path, 'src'))
-	const pkg_dist_dir_a = pkg_path_a.map(package_path => join(package_path, 'lib'))
-	const all_ts_src_path_a = await path_a_(pkg_src_dir_a.map(ts_src_path => `${ts_src_path}/**/*.(ts|tsx)`))
+		.filter((_, i)=>pkg_dir_stat_a[i])
+		.sort((i0_path, i1_path)=>i1_path.length - i0_path.length)
+	const pkg_src_dir_a = pkg_path_a.map(package_path=>join(package_path, 'src'))
+	const pkg_dist_dir_a = pkg_path_a.map(package_path=>join(package_path, 'lib'))
+	const all_ts_src_path_a = await path_a_(pkg_src_dir_a.map(ts_src_path=>`${ts_src_path}/**/*.(ts|tsx)`))
 	const d_ts_regex = /\.d\.ts$/
-	const ts_src_path_a = all_ts_src_path_a.filter(ts_path => !d_ts_regex.test(ts_path))
+	const ts_src_path_a = all_ts_src_path_a.filter(ts_path=>!d_ts_regex.test(ts_path))
 	for (const asset_ext of ts_dist_ext_a) {
 		await sync_dist_to_src(
 			'init',
-			await path_a_(pkg_dist_dir_a.map(pkg_dist_dir => `${pkg_dist_dir}/**/*${asset_ext}`)),
+			await path_a_(pkg_dist_dir_a.map(pkg_dist_dir=>`${pkg_dist_dir}/**/*${asset_ext}`)),
 			asset_ext
 		)
 	}
 	for (const ts_src_ext of ts_src_ext_a) {
 		await sync_src_to_dist(
 			'init',
-			await path_a_(pkg_src_dir_a.map(ts_src_path => `${ts_src_path}/**/*${ts_src_ext}`)),
+			await path_a_(pkg_src_dir_a.map(ts_src_path=>`${ts_src_path}/**/*${ts_src_ext}`)),
 			ts_src_ext,
 			force
 		)
@@ -97,9 +97,9 @@ Options:
 	/**
 	 * @param {string} path
 	 */
-	const filter = ({ path }) => {
+	const filter = ({ path })=>{
 		const full_path = join(root_dir, path)
-		return !!ts_src_path_a.find(src_path => ~src_path.indexOf(full_path))
+		return !!ts_src_path_a.find(src_path=>~src_path.indexOf(full_path))
 	}
 	/** @type {CheapWatch} */
 	await new CheapWatch({ dir: resolve('.'), filter, debounce: 50 })
@@ -109,7 +109,7 @@ Options:
 			 * @param {Stats} stats
 			 * @returns {Promise<void>}
 			 */
-			async ({ path, stats }) => {
+			async ({ path, stats })=>{
 				if (should_ignore_path_(path)) return
 				if (verbose) {
 					console.info('+', path)
@@ -126,7 +126,7 @@ Options:
 			 * @param {Stats} stats
 			 * @returns {Promise<void>}
 			 */
-			async ({ path, stats }) => {
+			async ({ path, stats })=>{
 				if (should_ignore_path_(path)) return
 				if (verbose) {
 					console.info('-', path)
@@ -143,16 +143,16 @@ Options:
 	 * @param {string} path
 	 */
 	function should_ignore_path_(path) {
-		return ignore_a.some(ignore => minimatch(path, ignore))
+		return ignore_a.some(ignore=>minimatch(path, ignore))
 	}
 	/**
 	 * @param {string} relative_path
 	 * @return {Promise<void>}
 	 */
 	async function schedule_sync_src_dist(relative_path) {
-		await sync_queue.add(async () => {
+		await sync_queue.add(async ()=>{
 			const absolute_path = join(root_dir, relative_path)
-			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir => ~absolute_path.indexOf(tsconfig_dir))
+			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir=>~absolute_path.indexOf(tsconfig_dir))
 			for (const ts_dist_ext of ts_dist_ext_a) {
 				await sync_dist_to_src(relative_path, await path_a_([`${tsconfig_dir}/lib/**/*${ts_dist_ext}`]), ts_dist_ext)
 			}
@@ -192,8 +192,8 @@ Options:
 		const total_count = op_adapter_a.length
 		try {
 			await Promise.all(
-				op_adapter_a.map(op_adapter => op_queue.add(
-					async () => {
+				op_adapter_a.map(op_adapter=>op_queue.add(
+					async ()=>{
 						try {
 							const { op, hash } = op_adapter
 							await ops[op.name](op.args[0], ...op.args.slice(1))
@@ -247,11 +247,11 @@ Options:
 		for (const dist_path of dist_path_a) {
 			if (should_ignore_path_(dist_path)) continue
 			if (~dist_path.indexOf('/src/')) continue
-			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir => ~dist_path.indexOf(tsconfig_dir))
+			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir=>~dist_path.indexOf(tsconfig_dir))
 			const dist_relative_path = dist_path
 				.replace(`${tsconfig_dir}/`, '')
 				.replace(/^lib\//, '')
-			const src_path_a = ts_src_ext_a.map(source_ext =>
+			const src_path_a = ts_src_ext_a.map(source_ext=>
 				join(
 					tsconfig_dir, 'src', dirname(dist_relative_path),
 					`${basename(dist_relative_path, dist_ext)}${source_ext}`
@@ -259,10 +259,10 @@ Options:
 			)
 			/** @type {(Stats|null)[]} */
 			const src_stat_a = await Promise.all(
-				src_path_a.map(src_path => file_stat_(src_path))
+				src_path_a.map(src_path=>file_stat_(src_path))
 			)
-			if (src_stat_a.some(exists => exists)) {
-				const idx = src_stat_a.findIndex(src_stat => src_stat)
+			if (src_stat_a.some(exists=>exists)) {
+				const idx = src_stat_a.findIndex(src_stat=>src_stat)
 				const src_stat = src_stat_a[idx]
 				const dist_stat = await file_stat_(dist_path)
 				if (src_stat?.mtime > dist_stat?.mtime) {
@@ -292,23 +292,23 @@ Options:
 		for (const src_path of src_path_a) {
 			if (should_ignore_path_(src_path)) continue
 			if (~src_path.indexOf('/lib/')) continue
-			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir => ~src_path.indexOf(tsconfig_dir))
+			const tsconfig_dir = pkg_dir_a.find(tsconfig_dir=>~src_path.indexOf(tsconfig_dir))
 			const src_relative_path = src_path.replace(join(tsconfig_dir, 'src'), '')
 			const dist_relative_path_a = ts_dist_ext_a
-				.filter(ts_dist_ext =>
+				.filter(ts_dist_ext=>
 					src_ext === '.tsx'
 					? !~['.js', '.js.map'].indexOf(ts_dist_ext)
 					: !~['.jsx', '.jsx.map'].indexOf(ts_dist_ext)
-				).map(asset_ext =>
+				).map(asset_ext=>
 					`${dirname(src_relative_path)}${basename(src_relative_path, src_ext)}${asset_ext}`)
 			const dist_base_path = join(tsconfig_dir, 'lib')
-			const dist_path_a = dist_relative_path_a.map((dist_relative_path) =>
+			const dist_path_a = dist_relative_path_a.map((dist_relative_path)=>
 				join(dist_base_path, dist_relative_path))
 			/** @type {(Stats|null)[]} */
 			const dist_stat_a = await Promise.all(
-				dist_path_a.map(dist_path => file_stat_(dist_path))
+				dist_path_a.map(dist_path=>file_stat_(dist_path))
 			)
-			if (force || dist_stat_a.every(exists => !exists)) {
+			if (force || dist_stat_a.every(exists=>!exists)) {
 				if (verbose) {
 					console.info('sync_src_to_dist|force|missing_dist', {
 						src_path,
@@ -323,7 +323,7 @@ Options:
 				)
 			} else {
 				const src_stat = await file_stat_(src_path)
-				const dist_stat = dist_stat_a.find(dist_stat => src_stat?.mtime > dist_stat?.mtime)
+				const dist_stat = dist_stat_a.find(dist_stat=>src_stat?.mtime > dist_stat?.mtime)
 				if (dist_stat) {
 					if (verbose) {
 						console.info('sync_src_to_dist|build|mtime', {
