@@ -23,7 +23,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/cli-args": "^11.0.45",
-		"@ctx-core/monorepo": "^18.4.5",
+		"@ctx-core/monorepo": "^18.4.6",
 		"@ctx-core/queue": "^7.3.1",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.2.0",
