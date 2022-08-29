@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.69
+
+### Patch Changes
+
+- tsx: ^3.8.2 -> ^3.9.0
+- Updated dependencies
+  - @ctx-core/cli-args@11.0.48
+  - @ctx-core/monorepo@18.4.10
+  - @ctx-core/queue@7.3.2
+
 ## 1.0.68
 
 ### Patch Changes
