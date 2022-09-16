@@ -208,9 +208,7 @@ Options:
 						} finally {
 							current_count += 1
 						}
-					})
-				)
-			)
+					})))
 			op_adapter_a.length = 0
 			pending_id_set.clear()
 		} finally {
