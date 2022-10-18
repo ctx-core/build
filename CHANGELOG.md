@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.71
+
+### Patch Changes
+
+- fdir: ^5.2.1 -> ^5.3.0
+
 ## 1.0.70
 
 ### Patch Changes
