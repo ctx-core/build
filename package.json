@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.82",
+	"version": "1.0.83",
 	"private": false,
 	"type": "module",
 	"bin": {
@@ -22,8 +22,8 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/cli-args": "^11.0.53",
-		"@ctx-core/monorepo": "^18.4.26",
+		"@ctx-core/cli-args": "^11.0.54",
+		"@ctx-core/monorepo": "^18.4.27",
 		"@ctx-core/queue": "^7.3.2",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.3.0",
