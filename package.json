@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.102",
+	"version": "1.0.103",
 	"private": false,
 	"type": "module",
 	"bin": {
@@ -28,7 +28,7 @@
 		"cheap-watch": "^1.0.4",
 		"fdir": "^5.3.0",
 		"js-yaml": "^4.1.0",
-		"minimatch": "^6.1.2",
+		"minimatch": "^6.1.5",
 		"ora": "6.1.2",
 		"rusha": "^0.8.14"
 	},
