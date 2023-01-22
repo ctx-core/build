@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.106
+
+### Patch Changes
+
+- minimatch: ^6.1.5 -> ^6.1.6
+
 ## 1.0.105
 
 ### Patch Changes
