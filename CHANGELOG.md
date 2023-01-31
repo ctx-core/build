@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.112
+
+### Patch Changes
+
+- @ctx-core/queue: ^7.3.3 -> ^7.3.4
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/monorepo@18.4.47
+
 ## 1.0.111
 
 ### Patch Changes
