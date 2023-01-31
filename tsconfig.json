@@ -23,8 +23,7 @@
 		],
 		"rootDir": "src",
 		"outDir": "lib",
-		"declarationDir": "lib",
-		"importsNotUsedAsValues": "error"
+		"declarationDir": "lib"
 	},
 	"exclude": [
 		"node_modules",
