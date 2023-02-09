@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.123
+
+### Patch Changes
+
+- fdir: ^6.0.0 -> ^6.0.1
+
 ## 1.0.122
 
 ### Patch Changes
