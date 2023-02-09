@@ -6,8 +6,8 @@ import minimatch from 'minimatch'
 import ora from 'ora'
 import { basename, dirname, join, resolve } from 'path'
 import Rusha from 'rusha'
+import { exec } from '@ctx-core/child_process'
 import { param_r_ } from '@ctx-core/cli-args'
-import { exec } from '@ctx-core/monorepo'
 import { queue_ } from '@ctx-core/queue'
 /** @typedef {import('./index.d.ts').Op} Op */
 /** @typedef {import('./index.d.ts').OpAdapter} OpAdapter */

@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.120
+
+### Patch Changes
+
+- build_watch_cli: fix: import { exec } from '@ctx-core/child_process'
+
 ## 1.0.119
 
 ### Patch Changes
