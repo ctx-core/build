@@ -1,5 +1,13 @@
 # @ctx-core/build
 
+## 1.0.122
+
+### Patch Changes
+
+- @ctx-core/child_process: workspace:^7.2.1 -> 7.2.2
+- Updated dependencies
+  - @ctx-core/monorepo@19.0.4
+
 ## 1.0.121
 
 ### Patch Changes
