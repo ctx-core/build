@@ -382,7 +382,7 @@ Options:
 		} catch (e) {
 			console.error(e.cmd)
 			console.error(e.stdout)
-			throw 'build error'
+			throw new Error('build error')
 		}
 	}
 }

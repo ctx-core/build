@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.146
+
+### Patch Changes
+
+- fix: `throw new Error(error_message)` instead of `throw error_message`
+
 ## 1.0.145
 
 ### Patch Changes
