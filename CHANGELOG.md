@@ -1,5 +1,22 @@
 # @ctx-core/build
 
+## 1.0.169
+
+### Patch Changes
+
+- @ctx-core/cli-args: ^11.1.11 -> ^11.1.12
+- @ctx-core/child_process: 7.2.11 -> 7.2.12
+- @ctx-core/monorepo: ^19.0.35 -> ^19.0.36
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/monorepo@19.0.37
+
+## 1.0.168
+
+### Patch Changes
+
+- .gitignore: + coverage
+
 ## 1.0.167
 
 ### Patch Changes
