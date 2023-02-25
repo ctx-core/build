@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.171
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^19.0.38 -> ^19.0.39
+
 ## 1.0.170
 
 ### Patch Changes
