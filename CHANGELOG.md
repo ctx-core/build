@@ -1,5 +1,13 @@
 # @ctx-core/build
 
+## 1.0.170
+
+### Patch Changes
+
+- @ctx-core/child_process@7.2.13
+- @ctx-core/cli-args@11.1.13
+- @ctx-core/monorepo@19.0.38
+
 ## 1.0.169
 
 ### Patch Changes
