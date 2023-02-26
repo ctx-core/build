@@ -1,5 +1,13 @@
 # @ctx-core/build
 
+## 1.0.174
+
+### Patch Changes
+
+- minimatch: ^7.1.3 -> ^7.1.4
+- Updated dependencies
+  - @ctx-core/monorepo@19.0.40
+
 ## 1.0.173
 
 ### Patch Changes
