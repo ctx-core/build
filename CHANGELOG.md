@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.179
+
+### Patch Changes
+
+- @ctx-core/env: ^17.2.18 -> ^17.2.19
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/child_process@7.2.17
+  - @ctx-core/env@17.2.20
+
 ## 1.0.178
 
 ### Patch Changes
