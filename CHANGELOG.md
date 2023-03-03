@@ -1,5 +1,19 @@
 # @ctx-core/build
 
+## 1.0.187
+
+### Patch Changes
+
+- @types/node: ^18.14.5 -> ^18.14.6
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/cli-args@11.1.15
+  - @ctx-core/monorepo@19.0.46
+  - @ctx-core/env@17.2.23
+
 ## 1.0.186
 
 ### Patch Changes
