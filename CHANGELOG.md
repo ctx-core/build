@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.186
+
+### Patch Changes
+
+- @ctx-core/child_process@7.2.20
+
 ## 1.0.185
 
 ### Patch Changes
