@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.0.227
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.0.36 -> ^20.0.37
+- Updated dependencies
+  - @ctx-core/cli-args@11.1.25
+  - @ctx-core/env@17.2.40
+  - @ctx-core/monorepo@20.0.38
+
 ## 1.0.226
 
 ### Patch Changes
