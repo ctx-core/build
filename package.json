@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.278",
+	"version": "1.0.279",
 	"private": false,
 	"type": "module",
 	"bin": {

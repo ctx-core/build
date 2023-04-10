@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.279
+
+### Patch Changes
+
+- fix: minimatch import
+
 ## 1.0.278
 
 ### Patch Changes
