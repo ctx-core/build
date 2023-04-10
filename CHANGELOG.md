@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.277
+
+### Patch Changes
+
+- minimatch: ^8.0.3 -> ^9.0.0
+
 ## 1.0.276
 
 ### Patch Changes
