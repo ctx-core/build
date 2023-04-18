@@ -1,5 +1,29 @@
 # @ctx-core/build
 
+## 1.0.297
+
+### Patch Changes
+
+- @ctx-core/dev-tools: 8.1.107 -> 8.1.108
+- @ctx-core/build: 1.0.295 -> 1.0.296
+- @ctx-core/git-tools: ^7.0.57 -> ^7.0.58
+- @ctx-core/ctx-core-package-tools: ^8.0.187 -> ^8.0.188
+- @ctx-core/monorepo: ^20.2.1 -> ^20.2.2
+- @ctx-core/function: ^21.17.12 -> ^21.17.13
+- @ctx-core/queue: ^7.5.13 -> ^7.5.15
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/child_process@7.3.24
+  - @ctx-core/cli-args@11.3.16
+  - @ctx-core/env@17.2.78
+  - @ctx-core/monorepo@20.2.3
+  - @ctx-core/queue@7.5.16
+
 ## 1.0.296
 
 ### Patch Changes
