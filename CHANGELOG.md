@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.321
+
+### Patch Changes
+
+- eslint: ^8.39.0 -> ^8.40.0
+
 ## 1.0.320
 
 ### Patch Changes
