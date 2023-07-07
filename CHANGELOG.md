@@ -1,5 +1,14 @@
 # @ctx-core/build
 
+## 1.0.370
+
+### Patch Changes
+
+- minimatch: ^9.0.2 -> ^9.0.3
+- @types/node: ^20.3.3 -> ^20.4.0
+- Updated dependencies
+  - @ctx-core/monorepo@20.4.65
+
 ## 1.0.369
 
 ### Patch Changes
