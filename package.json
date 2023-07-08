@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.370",
+	"version": "1.0.371",
 	"private": false,
 	"type": "module",
 	"bin": {
@@ -22,10 +22,10 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/child_process": "^7.3.65",
+		"@ctx-core/child_process": "^7.3.66",
 		"@ctx-core/cli-args": "^11.3.33",
-		"@ctx-core/env": "^17.2.121",
-		"@ctx-core/monorepo": "^20.4.65",
+		"@ctx-core/env": "^17.2.122",
+		"@ctx-core/monorepo": "^20.4.66",
 		"@ctx-core/queue": "^7.9.0",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.0.1",
