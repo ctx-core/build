@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.0.380",
+	"version": "1.0.381",
 	"private": false,
 	"type": "module",
 	"bin": {
@@ -28,7 +28,7 @@
 		"@ctx-core/monorepo": "^20.4.75",
 		"@ctx-core/queue": "^7.9.0",
 		"cheap-watch": "^1.0.4",
-		"fdir": "^6.0.1",
+		"fdir": "^6.0.2",
 		"js-yaml": "^4.1.0",
 		"minimatch": "^9.0.3",
 		"ora": "7.0.0",
