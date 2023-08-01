@@ -1,5 +1,13 @@
 # @ctx-core/build
 
+## 1.0.382
+
+### Patch Changes
+
+- ora: 7.0.0 -> 7.0.1
+- Updated dependencies
+  - @ctx-core/monorepo@20.4.76
+
 ## 1.0.381
 
 ### Patch Changes
