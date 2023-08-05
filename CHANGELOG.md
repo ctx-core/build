@@ -1,5 +1,11 @@
 # @ctx-core/build
 
+## 1.0.384
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.4.77 -> ^20.4.78
+
 ## 1.0.383
 
 ### Patch Changes
