@@ -1,5 +1,13 @@
 # @ctx-core/build
 
+## 1.0.390
+
+### Patch Changes
+
+- @types/node: ^20.5.0 -> ^20.5.1
+- Updated dependencies
+  - @ctx-core/monorepo@20.4.85
+
 ## 1.0.389
 
 ### Patch Changes
