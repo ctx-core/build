@@ -1,5 +1,17 @@
 # @ctx-core/build
 
+## 1.0.405
+
+### Patch Changes
+
+- version bump
+- Updated dependencies
+  - @ctx-core/child_process@7.3.77
+  - @ctx-core/cli-args@11.3.39
+  - @ctx-core/env@17.3.5
+  - @ctx-core/monorepo@20.4.100
+  - @ctx-core/queue@7.9.2
+
 ## 1.0.404
 
 ### Patch Changes
