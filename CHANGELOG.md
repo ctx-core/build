@@ -1,5 +1,14 @@
 # @ctx-core/build
 
+## 1.0.412
+
+### Patch Changes
+
+- @types/rusha: ^0.8.0 -> ^0.8.1
+- @types/node: ^20.7.0 -> ^20.7.1
+- Updated dependencies
+  - @ctx-core/monorepo@20.4.107
+
 ## 1.0.411
 
 ### Patch Changes
