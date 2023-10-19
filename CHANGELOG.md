@@ -1,5 +1,22 @@
 # @ctx-core/build
 
+## 1.0.426
+
+### Patch Changes
+
+- @types/rusha: ^0.8.1 -> ^0.8.2
+- tsx: ^3.13.0 -> ^3.14.0
+- @types/node: ^20.8.6 -> ^20.8.7
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/queue@7.9.3
+  - @ctx-core/child_process@7.3.82
+  - @ctx-core/cli-args@11.3.42
+  - @ctx-core/env@17.3.10
+  - @ctx-core/monorepo@20.4.121
+
 ## 1.0.425
 
 ### Patch Changes
