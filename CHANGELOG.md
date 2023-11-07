@@ -1,5 +1,16 @@
 # @ctx-core/build
 
+## 1.0.440
+
+### Patch Changes
+
+- @types/rusha: ^0.8.2 -> ^0.8.3
+- @types/node: ^20.8.10 -> ^20.9.0
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/monorepo@20.4.135
+  - @ctx-core/queue@7.9.5
+
 ## 1.0.439
 
 ### Patch Changes
