@@ -1,5 +1,28 @@
 # @ctx-core/build
 
+## 1.1.0
+
+### Minor Changes
+
+- fix:types package.json exports
+- tsconfig:
+
+      "module": "ESNext"
+      "moduleResolution": "nodenext"
+      "target": "ESNext"
+
+### Patch Changes
+
+- package.json: - "svelte": "./src/index.js"
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/child_process@7.4.0
+  - @ctx-core/cli-args@11.4.0
+  - @ctx-core/env@17.4.0
+  - @ctx-core/monorepo@20.5.0
+  - @ctx-core/queue@7.10.0
+
 ## 1.0.445
 
 ### Patch Changes
