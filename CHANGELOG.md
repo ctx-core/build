@@ -1,5 +1,17 @@
 # @ctx-core/build
 
+## 1.1.3
+
+### Patch Changes
+
+- fix: missing tsconfig.json
+- Updated dependencies
+  - @ctx-core/child_process@7.4.3
+  - @ctx-core/cli-args@11.4.2
+  - @ctx-core/env@17.4.2
+  - @ctx-core/monorepo@20.5.3
+  - @ctx-core/queue@7.10.2
+
 ## 1.1.2
 
 ### Patch Changes
