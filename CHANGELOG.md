@@ -1,5 +1,17 @@
 # @ctx-core/build
 
+## 1.1.4
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - @ctx-core/child_process@7.4.4
+  - @ctx-core/cli-args@11.4.3
+  - @ctx-core/env@17.4.3
+  - @ctx-core/monorepo@20.5.4
+  - @ctx-core/queue@7.10.3
+
 ## 1.1.3
 
 ### Patch Changes
