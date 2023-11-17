@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.1.18
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.5.17 -> ^20.5.18
+- @ctx-core/cli-args: ^11.4.10 -> ^11.4.11
+- @ctx-core/queue: ^7.10.10 -> ^7.10.11
+- @ctx-core/env: ^17.4.10 -> ^17.4.11
+- @ctx-core/child_process: ^7.4.11 -> ^7.4.12
+
 ## 1.1.17
 
 ### Patch Changes
