@@ -1,5 +1,14 @@
 # @ctx-core/build
 
+## 1.1.25
+
+### Patch Changes
+
+- @ctx-core/monorepo: ^20.5.24 -> ^20.5.25
+- eslint: ^8.53.0 -> ^8.54.0
+- Updated dependencies
+  - @ctx-core/queue@7.10.14
+
 ## 1.1.24
 
 ### Patch Changes
