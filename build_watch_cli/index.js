@@ -9,9 +9,9 @@ import { minimatch } from 'minimatch'
 import ora from 'ora'
 import { basename, dirname, join, resolve } from 'path'
 import Rusha from 'rusha'
-/** @typedef {import('./index.d.ts').Op} Op */
-/** @typedef {import('./index.d.ts').OpAdapter} OpAdapter */
-/** @typedef {import('ora').Ora} Ora */
+/** @typedef {import('./index.d.ts').Op} */
+/** @typedef {import('./index.d.ts').OpAdapter} */
+/** @typedef {import('ora').Ora} */
 export async function build_watch_cli() {
 	const param_r = param_r_(process.argv.slice(2), {
 		help: '-h, --help',
@@ -51,7 +51,7 @@ Options:
 	/** @type {Set<string>} */
 	const pending_id_set = new Set()
 	const root_dir = resolve('.')
-	const pnpm_workspace = /** @type {{ packages:string[] }} */ await yaml.load(
+	const pnpm_workspace = /** @type {{ packages:string[] } */ await yaml.load(
 		await readFile(pnpm_workspace_path).then($=>$.toString()))
 	/** @type {string[]} */
 	const pnpm_workspace_package_path_a = pnpm_workspace.packages.map(package_path=>join(root_dir, package_path))
