@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.1.47
+
+### Patch Changes
+
+- @types/node: ^20.9.3 -> ^20.9.4
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/queue@7.10.24
+  - @ctx-core/monorepo@20.5.48
+
 ## 1.1.46
 
 ### Patch Changes
