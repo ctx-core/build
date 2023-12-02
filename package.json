@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.1.66",
+	"version": "1.1.67",
 	"private": false,
 	"type": "module",
 	"bin": {
@@ -31,7 +31,7 @@
 		"@ctx-core/child_process": "^7.4.36",
 		"@ctx-core/cli-args": "^11.4.33",
 		"@ctx-core/env": "^17.4.36",
-		"@ctx-core/monorepo": "^20.5.67",
+		"@ctx-core/monorepo": "^20.5.68",
 		"@ctx-core/queue": "^7.10.33",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.1.1",
@@ -41,11 +41,11 @@
 		"rusha": "^0.8.14"
 	},
 	"devDependencies": {
-		"@types/node": "^20.10.1",
+		"@types/node": "^20.10.2",
 		"@types/rusha": "^0.8.3",
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
-		"eslint": "^8.54.0",
+		"eslint": "^8.55.0",
 		"tsx": "^4.6.1",
 		"typescript": "next",
 		"uvu": "^0.5.6"
