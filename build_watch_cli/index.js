@@ -1,7 +1,7 @@
 import { exec } from '@ctx-core/child_process'
 import { param_r_ } from '@ctx-core/cli-args'
-import { queue_ } from '@ctx-core/queue'
 import CheapWatch from 'cheap-watch'
+import { queue_ } from 'ctx-core/queue'
 import { fdir } from 'fdir'
 import { readFile, rm as fs_rm, stat } from 'fs/promises'
 import yaml from 'js-yaml'
@@ -295,8 +295,8 @@ Options:
 			const dist_relative_path_a = ts_dist_ext_a
 				.filter(ts_dist_ext=>
 					src_ext === '.tsx'
-					? !~['.js', '.js.map'].indexOf(ts_dist_ext)
-					: !~['.jsx', '.jsx.map'].indexOf(ts_dist_ext)
+						? !~['.js', '.js.map'].indexOf(ts_dist_ext)
+						: !~['.jsx', '.jsx.map'].indexOf(ts_dist_ext)
 				).map(asset_ext=>
 					`${dirname(src_relative_path)}${basename(src_relative_path, src_ext)}${asset_ext}`)
 			const dist_base_path = join(tsconfig_dir, 'lib')
