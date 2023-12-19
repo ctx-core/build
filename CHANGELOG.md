@@ -1,5 +1,24 @@
 # @ctx-core/build
 
+## 1.1.114
+
+### Patch Changes
+
+- @ctx-core/env: ^17.4.56 -> ^17.4.57
+- @types/node: ^20.10.4 -> ^20.10.5
+- eslint: ^8.55.0 -> ^8.56.0
+- @ctx-core/queue: ^7.10.52 -> ^7.10.53
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/monorepo@20.5.115
+  - @ctx-core/child_process@7.4.57
+  - @ctx-core/cli-args@11.4.53
+
 ## 1.1.113
 
 ### Patch Changes
