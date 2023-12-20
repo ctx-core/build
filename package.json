@@ -29,7 +29,6 @@
 	},
 	"dependencies": {
 		"@ctx-core/child_process": "^7.4.62",
-		"@ctx-core/cli-args": "^11.4.57",
 		"@ctx-core/env": "^17.4.61",
 		"@ctx-core/monorepo": "^20.5.123",
 		"ctx-core": "^5.1.0",

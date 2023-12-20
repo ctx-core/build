@@ -1,5 +1,6 @@
+/// <reference types="./index.d.ts" />
 import { exec } from '@ctx-core/child_process'
-import { param_r_ } from '@ctx-core/cli-args'
+import { param_r_ } from 'ctx-core/cli-args'
 import CheapWatch from 'cheap-watch'
 import { queue_ } from 'ctx-core/queue'
 import { fdir } from 'fdir'
@@ -9,8 +10,6 @@ import { minimatch } from 'minimatch'
 import ora from 'ora'
 import { basename, dirname, join, resolve } from 'path'
 import Rusha from 'rusha'
-/** @typedef {import('./index.d.ts').Op} */
-/** @typedef {import('./index.d.ts').OpAdapter} */
 /** @typedef {import('ora').Ora} */
 export async function build_watch_cli() {
 	const param_r = param_r_(process.argv.slice(2), {
