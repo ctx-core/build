@@ -1,5 +1,13 @@
 # @ctx-core/build
 
+## 1.1.162
+
+### Patch Changes
+
+- @ctx-core/env: ^17.5.26 -> ^17.5.27
+- Updated dependencies
+  - @ctx-core/monorepo@21.1.27
+
 ## 1.1.161
 
 ### Patch Changes
