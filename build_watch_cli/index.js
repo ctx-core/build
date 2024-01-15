@@ -4,11 +4,11 @@ import { param_r_ } from 'ctx-core/cli-args'
 import CheapWatch from 'cheap-watch'
 import { queue_ } from 'ctx-core/queue'
 import { fdir } from 'fdir'
-import { readFile, rm as fs_rm, stat } from 'fs/promises'
+import { readFile, rm as fs_rm, stat } from 'node:fs/promises'
 import yaml from 'js-yaml'
 import { minimatch } from 'minimatch'
 import ora from 'ora'
-import { basename, dirname, join, resolve } from 'path'
+import { basename, dirname, join, resolve } from 'node:path'
 import Rusha from 'rusha'
 /** @typedef {import('ora').Ora} */
 export async function build_watch_cli() {
