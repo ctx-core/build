@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.1.179",
+	"version": "1.1.180",
 	"private": false,
 	"type": "module",
 	"bin": {
@@ -31,7 +31,7 @@
 	"dependencies": {
 		"@ctx-core/child_process": "^7.4.108",
 		"@ctx-core/env": "^17.5.41",
-		"@ctx-core/monorepo": "^21.1.44",
+		"@ctx-core/monorepo": "^21.2.0",
 		"ctx-core": "^5.25.3",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.1.1",
