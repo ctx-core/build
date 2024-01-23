@@ -32,7 +32,7 @@
 		"@ctx-core/child_process": "^7.4.112",
 		"@ctx-core/env": "^17.5.45",
 		"@ctx-core/monorepo": "^21.4.4",
-		"ctx-core": "^5.27.0",
+		"ctx-core": "^5.27.1",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.1.1",
 		"js-yaml": "^4.1.0",
