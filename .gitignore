@@ -3,7 +3,7 @@ tsconfig.tsbuildinfo
 node_modules
 coverage
 COMMIT_EDITMSG
-~/.npm
+.npm
 coverage
 lib
 types
