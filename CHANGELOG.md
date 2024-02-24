@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.1.234
+
+### Patch Changes
+
+- eslint: ^8.56.0 -> ^8.57.0
+- @types/node: ^20.11.19 -> ^20.11.20
+- Updated dependencies
+  - ctx-core@6.4.5
+  - @ctx-core/monorepo@21.4.51
+
 ## 1.1.233
 
 ### Patch Changes
