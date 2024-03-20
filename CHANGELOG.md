@@ -1,5 +1,16 @@
 # @ctx-core/build
 
+## 1.1.257
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - @ctx-core/child_process@7.4.162
+  - ctx-core@6.6.1
+  - @ctx-core/env@17.6.39
+  - @ctx-core/monorepo@21.4.74
+
 ## 1.1.256
 
 ### Patch Changes

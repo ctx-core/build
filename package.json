@@ -1,7 +1,25 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.1.256",
-	"private": false,
+	"version": "1.1.257",
+	"description": "ctx-core build utility functions",
+	"keywords": [
+		"ctx-core",
+		"build"
+	],
+	"homepage": "https://github.com/ctx-core/build#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/build/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/build.git"
+	},
+	"license": "Apache-2.0",
+	"author": {
+		"name": "Brian Takita",
+		"url": "https://briantakita.me",
+		"email": "info+ctx-core-build@briantakita.me"
+	},
 	"type": "module",
 	"bin": {
 		"build-watch": "./bin/build-watch.mjs"
@@ -29,10 +47,10 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"@ctx-core/child_process": "^7.4.161",
-		"@ctx-core/env": "^17.6.38",
-		"@ctx-core/monorepo": "^21.4.73",
-		"ctx-core": "^6.6.0",
+		"@ctx-core/child_process": "^7.4.162",
+		"@ctx-core/env": "^17.6.39",
+		"@ctx-core/monorepo": "^21.4.74",
+		"ctx-core": "^6.6.1",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.1.1",
 		"js-yaml": "^4.1.0",
@@ -51,13 +69,5 @@
 		"uvu": "^0.5.6"
 	},
 	"noUpdate": [],
-	"homepage": "https://github.com/ctx-core/build#readme",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/build.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ctx-core/build/issues"
-	},
 	"sideEffects": false
 }
