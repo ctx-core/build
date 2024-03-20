@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.1.257",
+	"version": "1.1.258",
 	"description": "ctx-core build utility functions",
 	"keywords": [
 		"ctx-core",
@@ -49,8 +49,8 @@
 	"dependencies": {
 		"@ctx-core/child_process": "^7.4.162",
 		"@ctx-core/env": "^17.6.39",
-		"@ctx-core/monorepo": "^21.4.74",
-		"ctx-core": "^6.6.1",
+		"@ctx-core/monorepo": "^21.4.75",
+		"ctx-core": "^6.6.2",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.1.1",
 		"js-yaml": "^4.1.0",
@@ -59,7 +59,7 @@
 		"rusha": "^0.8.14"
 	},
 	"devDependencies": {
-		"@types/node": "^20.11.29",
+		"@types/node": "^20.11.30",
 		"@types/rusha": "^0.8.3",
 		"c8": "^9.1.0",
 		"check-dts": "^0.7.2",
