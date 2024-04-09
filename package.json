@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.1.282",
+	"version": "1.1.283",
 	"description": "ctx-core build utility functions",
 	"keywords": [
 		"ctx-core",
@@ -47,9 +47,9 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"@ctx-core/child_process": "^7.4.177",
-		"@ctx-core/env": "^17.6.54",
-		"@ctx-core/monorepo": "^21.4.97",
+		"@ctx-core/child_process": "^7.4.178",
+		"@ctx-core/env": "^17.6.55",
+		"@ctx-core/monorepo": "^21.4.98",
 		"ctx-core": "^7.1.4",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.1.1",
