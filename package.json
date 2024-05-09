@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.1.299",
+	"version": "1.1.300",
 	"description": "ctx-core build utility functions",
 	"keywords": [
 		"ctx-core",
@@ -49,7 +49,7 @@
 	"dependencies": {
 		"@ctx-core/child_process": "^7.4.188",
 		"@ctx-core/env": "^17.6.64",
-		"@ctx-core/monorepo": "^21.4.114",
+		"@ctx-core/monorepo": "^21.4.115",
 		"ctx-core": "^7.2.7",
 		"cheap-watch": "^1.0.4",
 		"fdir": "^6.1.1",
