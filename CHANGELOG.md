@@ -1,5 +1,15 @@
 # @ctx-core/build
 
+## 1.1.327
+
+### Patch Changes
+
+- @ctx-core/env: ^17.6.79 -> ^17.6.80
+- @ctx-core/child_process: ^7.4.203 -> ^7.4.204
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/monorepo@21.4.142
+
 ## 1.1.326
 
 ### Patch Changes
