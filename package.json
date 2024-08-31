@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/build",
-	"version": "1.1.340",
+	"version": "1.1.341",
 	"description": "ctx-core build utility functions",
 	"keywords": [
 		"ctx-core",
@@ -49,22 +49,22 @@
 	"dependencies": {
 		"@ctx-core/child_process": "^7.4.210",
 		"@ctx-core/env": "^17.6.86",
-		"@ctx-core/monorepo": "^21.4.154",
-		"ctx-core": "^7.2.30",
+		"@ctx-core/monorepo": "^21.4.155",
+		"ctx-core": "^7.2.31",
 		"cheap-watch": "^1.0.4",
-		"fdir": "^6.2.0",
+		"fdir": "^6.3.0",
 		"js-yaml": "^4.1.0",
 		"minimatch": "^10.0.1",
-		"ora": "8.0.1",
+		"ora": "8.1.0",
 		"rusha": "^0.8.14"
 	},
 	"devDependencies": {
-		"@types/node": "^22.2.0",
+		"@types/node": "^22.5.1",
 		"@types/rusha": "^0.8.3",
 		"c8": "^10.1.2",
-		"check-dts": "^0.8.0",
-		"eslint": "^9.9.0",
-		"tsx": "^4.17.0",
+		"check-dts": "^0.8.2",
+		"eslint": "^9.9.1",
+		"tsx": "^4.19.0",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},

@@ -1,5 +1,20 @@
 # @ctx-core/build
 
+## 1.1.341
+
+### Patch Changes
+
+- eslint: ^9.9.0 -> ^9.9.1
+- ora: 8.0.1 -> 8.1.0
+- @types/node: ^22.2.0 -> ^22.5.1
+- fdir: ^6.2.0 -> ^6.3.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/monorepo@21.4.155
+  - ctx-core@7.2.31
+
 ## 1.1.340
 
 ### Patch Changes
