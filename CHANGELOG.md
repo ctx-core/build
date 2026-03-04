@@ -1,5 +1,38 @@
 # @ctx-core/build
 
+## 1.1.345
+
+### Patch Changes
+
+- eslint: ^9.39.1 -> ^10.0.2
+- c8: ^10.1.3 -> ^11.0.0
+- minimatch: ^10.1.1 -> ^10.2.4
+- check-dts: ^0.8.2 -> ^0.9.0
+- js-yaml: ^4.1.0 -> ^4.1.1
+- tsx: ^4.20.6 -> ^4.21.0
+- ora: 8.1.0 -> 9.3.0
+- @types/node: ^22.19.0 -> ^25.3.3
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/child_process@7.4.213
+  - ctx-core@7.2.33
+  - @ctx-core/env@17.6.89
+  - @ctx-core/monorepo@21.4.159
+
 ## 1.1.344
 
 ### Patch Changes
