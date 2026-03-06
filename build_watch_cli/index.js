@@ -5,7 +5,6 @@ import CheapWatch from 'cheap-watch'
 import { queue_ } from 'ctx-core/queue'
 import { fdir } from 'fdir'
 import { readFile, rm as fs_rm, stat } from 'node:fs/promises'
-import yaml from 'js-yaml'
 import { minimatch } from 'minimatch'
 import ora from 'ora'
 import { basename, dirname, join, resolve } from 'node:path'
@@ -17,7 +16,7 @@ export async function build_watch_cli() {
 		force: '-f, --force',
 		ignore_a: '-i, --ignore',
 		op_threads_a: '-o, --op-threads',
-		pnpm_workspace_path_a: '-p, --pnpm-workspace-path',
+		workspace_config_path_a: '-p, --workspace-config-path',
 		sync_threads_a: '-s, --sync-threads',
 		verbose: '-v, --verbose',
 	})
@@ -26,7 +25,7 @@ export async function build_watch_cli() {
 	const verbose = !!param_r.verbose
 	/** @type {string[]} */
 	const ignore_a = param_r.ignore_a || []
-	const pnpm_workspace_path = param_r.pnpm_workspace_path_a?.[0] || './pnpm-workspace.yaml'
+	const workspace_config_path = param_r.workspace_config_path_a?.[0] || './package.json'
 	if (help) {
 		console.info(`
 Usage: build-watch [-f,--force]
@@ -50,12 +49,11 @@ Options:
 	/** @type {Set<string>} */
 	const pending_id_set = new Set()
 	const root_dir = resolve('.')
-	const pnpm_workspace = /** @type {{ packages:string[] } */ await yaml.load(
-		await readFile(pnpm_workspace_path).then($=>$.toString()))
+	const pkg_json = JSON.parse(await readFile(workspace_config_path, 'utf-8'))
 	/** @type {string[]} */
-	const pnpm_workspace_package_path_a = pnpm_workspace.packages.map(package_path=>join(root_dir, package_path))
+	const workspace_package_path_a = (pkg_json.workspaces || []).map(package_path=>join(root_dir, package_path))
 	/** @type {string[]} */
-	const pkg_path_a = await new fdir().glob(...pnpm_workspace_package_path_a)
+	const pkg_path_a = await new fdir().glob(...workspace_package_path_a)
 		.onlyDirs()
 		.withFullPaths()
 		.crawl(process.cwd())
@@ -369,7 +367,7 @@ Options:
 	 */
 	async function build(tsconfig_dir) {
 		try {
-			const cmd = `(cd ${tsconfig_dir} && pnpm run build)`
+			const cmd = `(cd ${tsconfig_dir} && bun run build)`
 			await exec(cmd)
 			if (verbose) {
 				console.info(cmd)
