@@ -1,5 +1,16 @@
 # @ctx-core/build
 
+## 1.1.346
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - @ctx-core/child_process@7.4.214
+  - ctx-core@7.2.34
+  - @ctx-core/env@17.6.90
+  - @ctx-core/monorepo@21.4.160
+
 ## 1.1.345
 
 ### Patch Changes
